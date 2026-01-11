@@ -153,49 +153,56 @@ button:hover {
 }
 @media (max-width: 480px) {
 
-  /* Reduce heading size */
-  .desc {
-    font-size: 28px;
-    line-height: 1.2;
+  body {
+    padding: 0;
   }
 
-  /* Stack image & quote vertically */
-  .quote-row {
-    flex-direction: column;
-    gap: 20px;
+  .container {
+    padding: 16px;
+  }
+
+  /* Heading */
+  .desc {
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 20px 0 10px;
     text-align: center;
   }
 
-  /* Center image */
-  .image-section {
-    display: flex;
-    justify-content: center;
+  /* Stack image & quote */
+  .quote-row {
+    flex-direction: column;
+    gap: 16px;
   }
 
+  /* Image */
   .image-section img {
-    width: 180px;
-    height: 180px;
+    max-width: 170px;
   }
 
-  /* Quote text adjustment */
+  /* Quote */
   #quote {
     font-size: 18px;
-    max-width: 90%;
     padding: 12px 16px;
+    line-height: 1.4;
+    max-width: 90%;
+    text-align: center;
   }
 
-  /* Cards spacing */
+  /* Cards */
   .cards {
-    margin: 20px 0;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .card {
-    width: 95%;
-    padding: 20px;
+    width: 100%;
   }
 
-  /* Button spacing */
+  /* Button */
   button {
+    font-size: 14px;
+    padding: 8px 16px;
     margin: 16px auto;
     display: block;
   }
