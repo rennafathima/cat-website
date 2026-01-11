@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            my first web page
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+
+    <body>
+        <button id="changeQuoteBtn">See the Magic🌟</button>
+    <div class="container">
+    <div class="top-section">
+        <p class="desc">
+            🐾 The Charming World of Cats
+        </p> 
+    </div>
+    <div class="quote-row">
+        <div class="image-section">
+        <img src="images/cat.jpg" alt="cat image">
+        </div>
+        <div class="text-box">
+        <p class="text" id="quote">
+          <span> “Soft paws, sharp minds</span>
+          <span> and hearts full of mystery.”</span>
+        </P>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="cards">
+        <div class="card">
+        <P class="secpara">
+            <span>Cats are gentle, curious, and independent animals that bring warmth and joy to many homes.</span>
+            <span>They love to explore their surroundings, nap in cozy corners, and play with anything that catches their attention.</span>
+            <span> With their soft fur, bright eyes, and playful behavior, cats easily win people’s hearts.</span>
+            <span>They are also known for their calm nature and comforting presence, making them wonderful companions for both quiet and busy days.</span>
+            <span>Their ability to sense human emotions, their comforting presence, and their amusing antics make them wonderful companions.</span> 
+            <span>Intelligent, observant, and full of character, cats bring warmth, joy, and a sense of calm to any home they live in.</span>
+        </p>
+        </div>
+        <div class="card">
+        <p class="thirdpara">
+            <span>Cats are fascinating and graceful animals known for their elegance, independence, and affectionate nature.</span>
+            <span>With their soft fur, sharp retractable claws, and keen senses—especially their excellent night vision and sensitive whiskers—cats are perfectly adapted hunters.</span> 
+            <span>They are incredibly agile and can jump great heights, land softly, and move silently.</span> 
+            <span>Cats are also famous for their peculiar habits: they love to nap for long hours, groom themselves meticulously, and choose cozy corners to relax.</span> 
+            <span>Despite their independent personality, cats form strong bonds with humans and often show affection through gentle purring, head rubs, and following their owners around.</span> 
+            <span>Each cat has a unique personality—some are playful and curious, while others are calm and reserved.</span>  </p>
+        </div>
+    </div>
+    </div>
+    <script>
+  const quotes = [
+    "Cats don’t rule the house — they politely allow us to live in it.",
+    "Independent by nature, affectionate by choice.",
+    "A cat’s job is simple: sleep, judge humans, repeat.",
+    "Cats: small creatures with big personalities."
+  ];
+
+  const quoteElement = document.getElementById("quote");
+  const button = document.getElementById("changeQuoteBtn");
+
+  button.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteElement.innerHTML = quotes[randomIndex];
+  });
+  button.addEventListener("click", () => {
+  quoteElement.style.opacity = 0;
+
+  setTimeout(() => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteElement.innerHTML = quotes[randomIndex];
+    quoteElement.style.opacity = 1;
+  }, 300);
+});
+
+</script>
+
+    </body>
+</html>
+
+
+
